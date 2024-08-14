@@ -8,5 +8,15 @@
     "id": 2,
     "salary": 98765,
     "name": "nupur"
+  },
+  {
+    "id": 3,
+    "salary": 7654,
+    "name": "yash"
+  },
+  {
+    "id": 4,
+    "salary": 3456789,
+    "name": "as"
   }
 ]
