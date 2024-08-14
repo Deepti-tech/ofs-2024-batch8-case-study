@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ofss.main</groupId>
-	<artifactId>02_EmployeeCRUD</artifactId>
+	<artifactId>INB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>02_EmployeeCRUD</name>
+	<name>INB</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -55,6 +55,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20220320</version>
+</dependency>
+
 	</dependencies>
 
 	<build>
