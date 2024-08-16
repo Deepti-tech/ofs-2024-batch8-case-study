@@ -1,0 +1,63 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <!-- Activity  #2 -->
+  <h1>Input text demo</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{firstname}}"
+              label-hint="Enter firstname"
+              label-edge="inside"></oj-c-input-text>
+  <oj-c-input-text
+              id="text-input"
+              value="[[firstname]]"
+              label-hint="Enter firstname"
+              label-edge="inside"></oj-c-input-text>
+  <h3>Hey! <oj-bind-text value="[[firstname]]"></oj-bind-text></h3>
+  <div>
+    <h1>Input number</h1>
+    <oj-c-input-number
+                value="{{salary}}"
+                label-hint="Enter salary"
+                min="0"
+                max="100"
+                step="0"></oj-c-input-number>
+    <h6>salary is <oj-bind-text value="[[salary]]"></oj-bind-text></h6>
+  </div>
+  <div>
+    <h1>Input password demo</h1>
+    <oj-form-layout max-columns="3" direction="row">
+      <oj-c-input-password required="true" value="{{password}}" label-hint="required"></oj-c-input-password>
+    </oj-form-layout>
+    <h6>password is <oj-bind-text value="[[password]]"></oj-bind-text></h6>
+    <div>
+      <h1>Input date demo</h1>
+      <oj-label for="datepicker">Date Picker</oj-label>
+            <oj-date-picker id="datepicker" value="{{date}}"></oj-date-picker>
+          
+            <br />
+          
+            <span class="oj-label">Current component value is:</span>
+            <span><oj-bind-text value="[[date]]"></oj-bind-text></span>
+    </div>
+  </div>
+  <!-- Activity #3 -->
+   <div>
+    <oj-c-button id="chroming_button5" chroming="danger" label="Danger"></oj-c-button>
+   </div>
+   <div>
+    <h1>Message demo</h1>
+    <oj-c-message-toast
+    data="[[messages]]"
+    on-oj-close="[[closeMessage]]"></oj-c-message-toast>
+   </div>
+   <div>
+    <h1>Progress demo</h1>
+    <oj-c-progress-bar class="oj-sm-margin-4x-bottom demo-width" value="-1"></oj-c-progress-bar>
+   </div>
+   <!-- ACtivity #4 -->
+    
+</div>
