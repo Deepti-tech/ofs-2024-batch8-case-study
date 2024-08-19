@@ -1,0 +1,52 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+  <h1>First name</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{first_name}}"
+              label-hint="Enter firstname"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Last name</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{last_name}}"
+              label-hint="Enter lastname"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Date of birth</h1>
+  <oj-input-date
+                value="{{date_of_birth}}"
+                label-hint="Disabled"
+                autocomplete="off"></oj-input-date>
+  <h1>Username</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{username}}"
+              label-hint="Enter username"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Password</h1>
+  <oj-c-input-password required="true" value="{{password}}" label-hint="required"></oj-c-input-password>
+  <h1>Email id</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{email_id}}"
+              label-hint="Enter username"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Address</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{address}}"
+              label-hint="Enter username"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Phone number</h1>
+  <oj-c-input-number
+  value="{{phone_number}}"
+  label-hint="Phone number"
+  min="0"
+  max="9999999999"></oj-c-input-number>
+  <oj-c-button id="register_button" chroming="callToAction" label="Register" on-oj-action="[[buttonAction]]"></oj-c-button>
+  </div>
+</div>

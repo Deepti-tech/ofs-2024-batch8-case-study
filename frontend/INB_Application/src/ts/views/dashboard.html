@@ -1,0 +1,17 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Username</h1>
+  <oj-c-input-text
+              id="text-input"
+              value="{{username}}"
+              label-hint="Enter username"
+              label-edge="inside"></oj-c-input-text>
+  <h1>Password</h1>
+  <oj-c-input-password required="true" value="{{password}}" label-hint="required"></oj-c-input-password>
+  <oj-c-button id="login_button" chroming="callToAction" label="Login" on-oj-action="[[buttonAction]]"></oj-c-button>
+  </div>
+</div>
